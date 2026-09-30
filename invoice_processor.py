@@ -401,9 +401,7 @@ def step_rename(client):
             prefix = DOC_TYPE_PREFIX.get(doc_type, "Invoice")
             is_auto_debit = is_auto_debit_vendor(supplier, auto_debit_vendors)
             if is_auto_debit:
-                prefix = f"{prefix}_[AUTO-DEBIT]"
-            else:
-                prefix = f"{prefix}_[MANUAL]"
+                prefix = f"{prefix}_[AUTO-DEBIT]"          
 
             # Construct safe sanitized filename
             safe_supplier = safe_filename(supplier)
@@ -416,7 +414,7 @@ def step_rename(client):
                 new_path = INVOICES_DIR / new_name
 
             pdf_path.rename(new_path)
-            debit_status = " [AUTO-DEBIT]" if is_auto_debit else " [MANUAL]"
+            debit_status = " [AUTO-DEBIT]" if is_auto_debit else ""
             print(f"  -> Renamed: {new_name}")
             print(f"     Type: {doc_type}{debit_status} | Vendor: {supplier} | #: {invoice_number} | Date: {date_formatted}")
 

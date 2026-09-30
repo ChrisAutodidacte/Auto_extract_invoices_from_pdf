@@ -55,18 +55,19 @@ Traditional OCR tools fail at multi-page invoice separation because they lack sp
                                            │
                                            ▼
                               🏷️ Auto-Debit Check (auto_debit_vendors.txt)
-                              Tags [AUTO-DEBIT] or [MANUAL]
+                              Adds [AUTO-DEBIT] tag if matched
                                            │
                                            ▼
                         ┌──────────────────────────────────────┐
                         │   Final Renamed, Organized PDFs      │
                         │   Invoice_[AUTO-DEBIT]_Vendor_#_Date │
+                        │   or: Invoice_Vendor_#_Date.pdf      │
                         └──────────────────────────────────────┘
 ```
 
 1. **Step 1 (Boundary Detection & Splitting):** Each page is rendered as a crisp high-resolution image. Gemini reviews the sequence, detects where each invoice starts and ends (regardless of page length), and splits the master scan into drafts. The master scan is archived into `inbox/processed/`.
 2. **Step 2 (Metadata Extraction & Verification):** Gemini inspects each individual draft to extract the exact issuing company name, document reference number, and document date.
-3. **The Business Auto-Debit Rule:** The vendor is checked against `auto_debit_vendors.txt`. If the vendor is on your auto-pay list, the file receives the `[AUTO-DEBIT]` tag; otherwise, it gets tagged `[MANUAL]` so you know what needs manual payment.
+3. **The Business Auto-Debit Rule:** The vendor is checked against `auto_debit_vendors.txt`. If the vendor is on your auto-pay list, the file receives the `[AUTO-DEBIT]` tag; otherwise, standard clean invoice naming is used.
 
 ---
 
