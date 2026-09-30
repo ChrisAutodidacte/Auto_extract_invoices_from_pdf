@@ -1,0 +1,4 @@
+# List of vendors paid automatically via Direct Debit / ACH Auto-Pay
+# Invoices from these vendors will automatically receive the [AUTO-DEBIT] tag in their filename
+CloudScale Hosting & Infrastructure Inc
+SwiftFreight Global Logistics

@@ -1,0 +1,30 @@
+# Secrets and local environment
+.env
+.env.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Keep output folders tracked while ignoring local runtime generated files
+invoices/*
+!invoices/.gitkeep
+anomalies/*
+!anomalies/.gitkeep
+inbox/processed/*
+!inbox/processed/.gitkeep
