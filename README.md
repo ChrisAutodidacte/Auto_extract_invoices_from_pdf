@@ -80,6 +80,7 @@ Traditional OCR tools fail at multi-page invoice separation because they lack sp
 ├── anomalies/                  # ⚠️ Unreadable or corrupted files flagged for manual review
 ├── samples/                    # 🧪 Original individual test invoices
 ├── auto_debit_vendors.txt      # ⚙️ List of vendors paid via direct debit / ACH
+├── Run Invoice Splitter.bat    # ⚡ 1-Click Windows launcher (no command prompt needed)
 ├── invoice_processor.py        # 🐍 Main Python automation script
 ├── requirements.txt            # 📦 Python package dependencies
 ├── .env.example                # 🔑 API key template
@@ -126,14 +127,16 @@ GEMINI_API_KEY=your_actual_api_key_here
 
 ---
 
-## ⚡ Running the Demo
+## ⚡ Running the Demo (Double-Click Simplicity)
 
 1. A sample 7-page multi-invoice scan (`Phone_Scan_Invoices_Batch.pdf`) is already preloaded inside **`inbox/`**.
 2. Customize **`auto_debit_vendors.txt`** with your own vendor names if needed.
-3. Run the script:
-```bash
-python invoice_processor.py
-```
+3. **Run the tool:**
+   - **On Windows (Recommended for non-tech users):** Simply double-click **`Run Invoice Splitter.bat`** (no terminal commands to type).
+   - **Via Command Line:**
+     ```bash
+     python invoice_processor.py
+     ```
 4. Open the **`invoices/`** folder: your invoices are now neatly separated, labeled, and tagged!
 
 ---
