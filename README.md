@@ -13,7 +13,7 @@
 
 ## 🎬 Video Walkthrough
 
-> 📺 **Watch the Behind-the-Scenes Build & Demo**:  
+> 📺 **Watch the Video Walkthrough**:  
 > Available on the YouTube channel: **[Chris Figures It Out](https://www.youtube.com/@ChrisFiguresItOut)**
 
 ---
@@ -127,7 +127,7 @@ GEMINI_API_KEY=your_actual_api_key_here
 
 ---
 
-## ⚡ Running the Demo (Double-Click Simplicity)
+## ⚡ How to Use (Double-Click Simplicity)
 
 1. A sample 7-page multi-invoice scan (`Phone_Scan_Invoices_Batch.pdf`) is already preloaded inside **`inbox/`**.
 2. Customize **`auto_debit_vendors.txt`** with your own vendor names if needed.
