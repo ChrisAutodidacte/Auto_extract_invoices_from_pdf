@@ -2,7 +2,7 @@
 chcp 65001 > nul
 title Smart PDF Invoice Splitter - Chris Figures It Out
 echo ============================================================
-echo   SMART PDF INVOICE SPLITTER & RENAMER (GEMINI AI)
+echo   SMART PDF INVOICE SPLITTER AND RENAMER (GEMINI AI)
 echo ============================================================
 echo.
 
