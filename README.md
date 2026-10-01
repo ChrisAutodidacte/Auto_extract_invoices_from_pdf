@@ -12,7 +12,7 @@
 ## 🎬 Video Walkthrough
 
 > 📺 **Watch the Video Walkthrough**:  
-> Available on the YouTube channel: **[Chris Figures It Out](https://www.youtube.com/@ChrisFiguresItOut)**
+> Available on the YouTube channel: **[Chris Figures It Out](https://youtu.be/trGCqXc2PD8)**
 
 ---
 
