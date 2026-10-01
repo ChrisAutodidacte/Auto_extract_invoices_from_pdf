@@ -1,7 +1,5 @@
 # 📑 Smart PDF Invoice Splitter & Auto-Renamer (Gemini AI + Python)
 
-> 🇫🇷 **Vous cherchez la version française ?** Consultez le dépôt français : [decoupe-factures-pdf-ia](https://github.com/ChrisAutodidacte/decoupe-factures-pdf-ia)
-
 > 🤖 **Automate the painful chore of sorting and renaming phone-scanned invoice batches.**  
 > Uses **Google Gemini Multimodal AI** to automatically detect document boundaries inside a multi-page PDF, split it into individual invoices, and rename them with vendor name, invoice number, date, and payment status tags.
 
